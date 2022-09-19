@@ -5,4 +5,9 @@ body {
 
 img {
     width: 50%;
+    /* units of width can be px*/
+}
+
+li{
+    color: yellow;
 }
