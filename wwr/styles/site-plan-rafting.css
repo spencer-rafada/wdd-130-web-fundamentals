@@ -3,8 +3,8 @@
 Any spaces in your font name should be replaced with a +. 
 Fonts are separated by a & */
 @import url('https://fonts.googleapis.com/css2?family=IM+Fell+French+Canon&family=Lato:ital,wght@0,400;0,700;1,400&display=swap');
-@import url('https://fonts.google.com/specimen/Oswald?category=Serif,Sans+Serif,Monospace&thickness=6');
-@import url('https://fonts.google.com/specimen/Raleway?category=Serif,Sans+Serif,Monospace&thickness=2');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&family=Raleway:wght@200&display=swap');
 
 :root {
   /* change the values below to your colors from your palette */
