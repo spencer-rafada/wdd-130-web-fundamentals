@@ -3,28 +3,30 @@
 Any spaces in your font name should be replaced with a +. 
 Fonts are separated by a & */
 @import url('https://fonts.googleapis.com/css2?family=IM+Fell+French+Canon&family=Lato:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.google.com/specimen/Oswald?category=Serif,Sans+Serif,Monospace&thickness=6');
+@import url('https://fonts.google.com/specimen/Raleway?category=Serif,Sans+Serif,Monospace&thickness=2');
 
 :root {
   /* change the values below to your colors from your palette */
-  --primary-color: #396E94   ;
-  --secondary-color: #E7C24F ;
-  --accent1-color: #A42212;
-  --accent2-color: white;
+  --primary-color: #FDFFFC   ;
+  --secondary-color: #F3B61F ;
+  --accent1-color: #3E7CB1;
+  --accent2-color: #25283D;
 
   /* change the values below to your chosen font(s) */
-  --heading-font: "IM Fell French Canon";
-  --paragraph-font: Lato, Helvetica, sans-serif;
+  --heading-font: "Oswald";
+  --paragraph-font: "Raleway";
 
   /* these colors below should be chosen from among your palette colors above */
-  --headline-color-on-white: #396E94;  /* headlines on a white background */ 
+  --headline-color-on-white: black;  /* headlines on a white background */ 
   --headline-color-on-color: white; /* headlines on a colored background */ 
-  --paragraph-color-on-white: #396E94; /* paragraph text on a white background */ 
+  --paragraph-color-on-white: black; /* paragraph text on a white background */ 
   --paragraph-color-on-color: white; /* paragraph text on a colored background */ 
-  --paragraph-background-color: #396E94  ;
-  --nav-link-color: #396E94;
-  --nav-background-color: #D4AC0D;
+  --paragraph-background-color: var(--accent1-color)  ;
+  --nav-link-color: var(--accent2-color);
+  --nav-background-color: var(--secondary-color);
   --nav-hover-link-color: white;
-  --nav-hover-background-color: #396E94;
+  --nav-hover-background-color: var(--accent2-color);
 }
 
 
@@ -82,16 +84,16 @@ p {
   height: 3em;
 }
 .primary {
-  background-color: #FDFFFC;
+  background-color: var(--primary-color);
 }
 .secondary {
-  background-color: #F3B61F;
+  background-color: var(--secondary-color);
 }
 .accent1 {
-  background-color: #3E7CB1;
+  background-color: var(--accent1-color);
 }
 .accent2{
-  background-color: #25283D;
+  background-color: var(--accent2-color);
 }
 p.colored {
   background-color: var(--paragraph-background-color);
