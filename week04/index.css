@@ -44,7 +44,9 @@ body{
 }
 
 .gospel-principle li{
-  margin-left: 120px;
+  margin-left: 18%;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .hero {
