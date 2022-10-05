@@ -1,0 +1,70 @@
+:root {
+  --border-color: rgb(252, 166, 201);
+
+}
+
+body{
+  margin: 0;
+}
+
+.container {
+  background-color: var(--border-color);
+  margin: auto;
+  width: 60%;
+  padding: 80px;
+}
+
+.header {
+  color: white;
+  justify-content: center;
+  text-align: center;
+}
+
+.header-title {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header-title:hover {
+  color: black;
+}
+
+.header h4 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.gospel {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.gospel-principle {
+  list-style-position: inside;
+  text-align: left;
+  font-weight: bold;
+}
+
+.gospel-principle li{
+  margin-left: 120px;
+}
+
+.hero {
+  text-align: center;
+}
+
+.hero-img {
+  width: 30%;
+}
+
+.hero-quote {
+  color: white;
+  font-weight: normal;
+  font-size: 35px;
+}
+
+.footer {
+  text-align: center;
+}
+
+.footer p {
+  margin: 0px;
+}
