@@ -1,0 +1,36 @@
+
+
+.pyramid {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.pyramid div{
+  height: 100px;
+}
+
+.top {
+  justify-content: center;
+  width: 30px;
+  height: 20px;
+  background-color: red;
+}
+
+.middle {
+  width: 70px;
+  background-color: blue;
+}
+
+.bottom {
+  width: 150px;
+  background-color: green;
+  margin-bottom: 100px;
+}
+
+.purple-bottom div{
+  display: inline;
+  margin: 70px;
+  background-color: purple;
+}
