@@ -1,0 +1,30 @@
+body {
+  margin: 0 auto;
+}
+.container {
+  margin: 0 auto;
+  text-align: center;
+  max-width: 800px;
+}
+
+.hero {
+  max-height: 310px;
+}
+
+.hero img {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.circles img {
+  border-radius: 50%;
+  border: 5px solid black;
+  width: 150px;
+  margin: 5%;
+}
+
+.circles {
+  text-align: center;
+  margin: 0 auto;
+  background-color: gray;
+}
