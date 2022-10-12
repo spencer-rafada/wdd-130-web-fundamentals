@@ -9,20 +9,18 @@ body {
 
 .hero img {
   display: block;
-  position: relative;
   width: 100%;
   margin: 0 auto;
 }
 
 .text {
-  position: absolute;
   top: 20px;
   left: 300px;
 }
 
 .circles img {
   border-radius: 50%;
-  border: 5px solid black;
+  border: 8px solid black;
   width: 150px;
   margin: 5%;
 }
@@ -31,4 +29,13 @@ body {
   text-align: center;
   margin: 0 auto;
   background-color: gray;
+}
+
+@media only screen and (max-width: 600px) {
+  main {
+    width: 100%;
+  }
+  .circles > img {
+    border-width: 4px;
+  }
 }
