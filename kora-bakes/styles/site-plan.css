@@ -6,13 +6,11 @@ Fonts are separated by a | */
 
 :root {
   /* change the values below to your colors from your palette */
-  --primary-color: #fd79a8   ;
-  --secondary-color: #ffeaa7 ;
-  --accent1-color: #dfe6e9;
-  --accent2-color: #2d3436;
-  --accent3-color: #55efc4;
-  --accent4-color: #81ecec;
-  --accent5-color: #fab1a0;
+  --primary-color: #f0386b;
+  --secondary-color: #ff5376;
+  --accent1-color: #f8c0c8;
+  --accent2-color: #e2c290;
+  --accent3-color: #ffffff;
 
   /* change the values below to your chosen font(s) */
   --heading-font: "Alex Brush";
@@ -32,6 +30,9 @@ Fonts are separated by a | */
 
 
 /*  Look around below...but DON'T CHANGE ANYTHING! */
+.logo {
+  width: 500px;
+}
 
 body {
   max-width: 1200px;
@@ -81,7 +82,7 @@ p {
   background-color: #999;
 }
 .colors td{
-  width: 25%;
+  width: 20%;
   height: 3em;
 }
 
@@ -96,6 +97,9 @@ p {
 }
 .accent2{
   background-color: var(--accent2-color);
+}
+.accent3{
+  background-color: var(--accent3-color);
 }
 
 p.colored {
