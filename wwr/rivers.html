@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>White Water Rafting</title>
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body onload="showDetails(0)">
+    <div id="content">
+      <header>
+        <a href="index.html" id="logo_link">
+          <img
+            class="logo"
+            src="images/wwr-logo3.png"
+            alt="White Water Rafting Logo"
+          />
+        </a>
+        <nav>
+          <a href="index.html">Home</a>
+          <a href="rivers.html">Rivers</a>
+          <a href="site-plan-rafting.html">Site Plan</a>
+          <a href="contactus.html">Contact Us</a>
+        </nav>
+      </header>
+      <main class="rivers-grid">
+        <div id="rivers-grid__info"></div>
+
+        <button
+          id="rivers-grid__button-prev"
+          type="button"
+          onclick="prevButtonPressed()"
+        >
+          <
+        </button>
+        <button
+          id="rivers-grid__button-next"
+          type="button"
+          onclick="nextButtonPressed()"
+        >
+          >
+        </button>
+      </main>
+      <footer>
+        <p>White Water Rafting &copy; 2022 - Spencer Rafada</p>
+        <p><a href="./site-plan-rafting.html">Site Plan</a></p>
+        <p><a href="./contactus.html">Contact Us</a></p>
+        <div class="social">
+          <a href="https://facebook.com" target="_blank">
+            <img src="images/facebook.png" alt="fb icon" />
+          </a>
+          <a href="https://twitter.com" target="_blank">
+            <img src="images/twitter.png" alt="twitter icon" />
+          </a>
+          <a href="https://instagram.com" target="_blank">
+            <img src="images/instagram.png" alt="instagram icon" />
+          </a>
+        </div>
+      </footer>
+    </div>
+    <script src="rivers_script.js"></script>
+  </body>
+</html>
