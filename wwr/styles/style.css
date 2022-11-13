@@ -137,9 +137,7 @@ nav {
 }
 
 nav a:hover {
-  background-color: (--accent1-color);
   color:#3E7CB1;
-  
 }
 
 .home-title{
