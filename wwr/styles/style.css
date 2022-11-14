@@ -322,6 +322,7 @@ footer .social img {
 #rivers-grid__button-prev:hover {
   background-color: var(--accent1-color);
   color: var(--primary-color);
+  cursor: pointer;
 }
 
 #rivers-grid__button-next {
@@ -339,6 +340,7 @@ footer .social img {
 #rivers-grid__button-next:hover {
   background-color: var(--accent1-color);
   color: var(--primary-color);
+  cursor: pointer;
 }
 
 @media screen and (max-width: 900px) {
