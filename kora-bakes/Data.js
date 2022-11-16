@@ -80,45 +80,4 @@ Products = [
   },
 ];
 
-const showProducts = () => {
-  Products.map((product) => {
-    // console.log(product);
-    const element = document.getElementById("products");
-    const div_product = document.createElement("div");
-    div_product.className = "product";
-    const div_product__info = document.createElement("div");
-    div_product__info.className = "product__info";
-    // Product Name
-    const product_name = document.createElement("h3");
-    product_name.innerHTML = product.product_name;
-    // Image
-    var img = new Image();
-    img.src = product.img;
-    // console.log(img);
-    // Short Description
-    const short_description = document.createElement("p");
-    const short_desc_value = document.createTextNode(product.short_description);
-    short_description.appendChild(short_desc_value);
-
-    div_product__info.appendChild(product_name);
-    div_product__info.appendChild(short_description);
-    div_product.appendChild(img);
-    div_product.appendChild(div_product__info);
-    element.appendChild(div_product);
-  });
-};
-
-const showTitle = () => {
-  const randomIndex = Math.floor(Math.random() * Products.length);
-  // console.log(randomIndex);
-  document.getElementById("hero__img").src = Products[randomIndex].img;
-  const title_h1 = document.getElementById("hero-msg__title");
-  title_h1.innerHTML = Products[randomIndex].product_name;
-  const short_desc = document.getElementById("hero-msg__info__desc");
-  short_desc.innerHTML = Products[randomIndex].short_description;
-};
-
-const showAll = () => {
-  showTitle();
-  showProducts();
-};
+export default Products;
