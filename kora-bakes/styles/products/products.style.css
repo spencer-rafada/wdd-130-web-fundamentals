@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400&family=Red+Hat+Display:wght@500;700;900&display=swap");
+/* font-family: 'Alex Brush', cursive;
+font-family: 'Noto Sans', sans-serif; */
+body {
+  font-family: "Red Hat Display", sans-serif;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  margin-left: 90px;
+  margin-right: 90px;
+}
+
+.navbar {
+  float: left;
+  display: inline;
+  min-width: 100%;
+  padding: 15px;
+  font-size: 22px;
+  margin-bottom: 90px;
+}
+.navbar img {
+  height: 70px;
+}
+.navbar .navbar-right {
+  display: flex;
+  align-items: center;
+  float: right;
+}
+.navbar .navbar-right a {
+  padding: 14px 16px;
+  text-decoration: none;
+  color: #F0386B;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 400;
+}
+.navbar .navbar-right a:hover {
+  background-color: #FF3576;
+  color: #FFFFFF;
+}/*# sourceMappingURL=products.style.css.map */
