@@ -168,13 +168,13 @@ body {
 .about-us h2 {
   text-align: center;
   transition: transform 0.5s;
-  color: #E2C290;
+  color: #F0386B;
   font-size: 35px;
   margin-bottom: 80px;
 }
 .about-us h2:hover {
-  color: #F0386B;
-  cursor: default;
+  color: #F8C0C8;
+  text-decoration: underline;
 }
 .about-us .about-us__card {
   display: flex;

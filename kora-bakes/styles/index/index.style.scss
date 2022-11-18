@@ -180,13 +180,13 @@ body {
   h2 {
     text-align: center;
     transition: transform .5s;
-    color: $accent2;
+    color: $primary;
     font-size: 35px;
     margin-bottom: 80px;
   }
   h2:hover {
-    color: $primary;
-    cursor: default;
+    color: $accent1;
+    text-decoration: underline;
   }
   .about-us__card {
     display: flex;
