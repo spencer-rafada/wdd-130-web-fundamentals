@@ -80,6 +80,39 @@ Products = [
   },
 ];
 
+var Reviews = new Object();
+Reviews = [
+  {
+    reviewer_name: "Chelice Ko Aguilar",
+    review_text:
+      "The cake she made for my wedding was so good! It really means a lot to me that my sister made my cake for my special day.",
+  },
+  {
+    reviewer_name: "Jenny Gonzales",
+    review_text: "Ang sarap sarap neto! Magaling na magaling yung baker!",
+  },
+  {
+    reviewer_name: "Kryssma Flores",
+    review_text: "Must buy treats! I highly recommend this one.",
+  },
+  {
+    reviewer_name: "Abish Corpuz",
+    review_text: "The cupcakes are so filling and so moist on the inside!",
+  },
+  {
+    reviewer_name: "Mhel Corpuz",
+    review_text: "Masarap na masarap ang mga ginagawa ni Hana! Must buy!",
+  },
+  {
+    reviewer_name: "Andoy Corpuz",
+    review_text: "Pinakain ni papa sakin yung gawa ni tita, ang sarap sobra!",
+  },
+  {
+    reviewer_name: "Mikee Rafada",
+    review_text: "Everything she bakes are so good and delicious!",
+  },
+];
+
 const showProducts = () => {
   Products.map((product) => {
     // console.log(product);
@@ -108,6 +141,23 @@ const showProducts = () => {
   });
 };
 
+const showReviews = () => {
+  Reviews.map((review) => {
+    const element = document.getElementById("reviews__scroll");
+    const div_review = document.createElement("div");
+    div_review.className = "review";
+    const reviewer_name = document.createElement("h3");
+    reviewer_name.innerHTML = review.reviewer_name;
+    const review_text = document.createElement("p");
+    const review_text_value = document.createTextNode(review.review_text);
+    review_text.appendChild(review_text_value);
+
+    div_review.appendChild(reviewer_name);
+    div_review.appendChild(review_text);
+    element.appendChild(div_review);
+  });
+};
+
 const showTitle = () => {
   const randomIndex = Math.floor(Math.random() * Products.length);
   // console.log(randomIndex);
@@ -121,4 +171,5 @@ const showTitle = () => {
 const showAll = () => {
   showTitle();
   showProducts();
+  showReviews();
 };

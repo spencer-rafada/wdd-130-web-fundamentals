@@ -8,6 +8,7 @@ body {
   margin: 0;
   margin-left: 90px;
   margin-right: 90px;
+  cursor: default;
 }
 
 .navbar {
@@ -19,7 +20,11 @@ body {
   margin-bottom: 90px;
 }
 .navbar img {
-  height: 70px;
+  transition: transform 0.2s;
+  height: 100px;
+}
+.navbar img:hover {
+  transform: scale(1.2);
 }
 .navbar .navbar-right {
   display: flex;
@@ -32,8 +37,52 @@ body {
   color: #F0386B;
   font-family: "Noto Sans", sans-serif;
   font-weight: 400;
+  transition: transform 0.2s;
 }
 .navbar .navbar-right a:hover {
   background-color: #FF3576;
   color: #FFFFFF;
+  transform: scale(1.1);
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer .footer__info {
+  margin-bottom: 15px;
+}
+.footer a {
+  color: #E2C290;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.footer a p {
+  display: inline;
+  color: #FF3576;
+}
+.footer a:hover {
+  color: #F0386B;
+}
+.footer a:hover p {
+  color: #E2C290;
+}
+
+.icon {
+  width: 30px;
+  background-color: #F8C0C8;
+  padding: 10px;
+  border-radius: 10px;
+  transition: transform 0.1s;
+}
+
+.icon:hover {
+  background-color: #FF3576;
+  transform: scale(1.2);
+}
+
+.logo {
+  width: 50px;
+  padding: 0px;
 }/*# sourceMappingURL=products.style.css.map */

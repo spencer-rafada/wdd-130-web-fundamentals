@@ -16,6 +16,7 @@ body {
   margin: 0;
   margin-left: 90px;
   margin-right: 90px;
+  cursor: default;
 }
 
 .navbar {
@@ -26,8 +27,13 @@ body {
   font-size: 22px;
   margin-bottom: 90px;
   img {
+    transition: transform .2s;
     height: 100px;
   }
+  img:hover {
+    transform: scale(1.2);
+  }
+
   .navbar-right {
     display: flex;
     align-items: center;
@@ -38,10 +44,12 @@ body {
       color: $primary;
       font-family: 'Noto Sans', sans-serif;
       font-weight: 400;
+      transition: transform .2s;
     }
     a:hover {
       background-color: $secondary;
       color: $white;
+      transform: scale(1.1);
     }
   }
 }
@@ -68,11 +76,12 @@ body {
     grid-row: 2/3;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    cursor: default;
     h1 {
       color: $secondary;
       margin: 0;
       font-weight: 900;
-      font-size: 55px;
+      font-size: 50px;
     }
     .hero-msg__info {
       display: grid;
@@ -81,11 +90,14 @@ body {
         margin: 0;
       }
       a {
-        width: 100px;
+        width: 90px;
         color: $white;
         padding: 14px 16px;
         background-color: $primary;
         text-decoration: none;
+      }
+      a:hover {
+        background-color: $accent1;
       }
     }
   }
@@ -105,6 +117,8 @@ body {
       height: 150px;
       grid-template-columns: 1fr 2fr;
       column-gap: 10px;
+      transition: transform 0.5s;
+      background-color: $white;
       img {
         grid-column: 1/2;
         height: 150px;
@@ -115,11 +129,15 @@ body {
         display: grid;
         h3 {
           margin: 0;
+          color: $accent2;
         }
         p {
           margin: 0;
         }
       }
+    }
+    .product:hover {
+      transform: scale(1.1);
     }
 
   }
@@ -133,7 +151,7 @@ body {
       color: $primary;
       font-size: 35px;
     }
-    .reviews__scroll {
+    #reviews__scroll {
       height: 450px;
       overflow: scroll;
     }
@@ -141,6 +159,7 @@ body {
       display: block;
       margin-top: 15px;
       margin-bottom: 15px;
+      background-color: $accent1;
       h3 {
         color: $white;
         font-size: 25px;
@@ -158,8 +177,9 @@ body {
 
 // About Us Section
 .about-us {
-  text-align: center;
   h2 {
+    text-align: center;
+    transition: transform .5s;
     color: $accent2;
     font-size: 35px;
     margin-bottom: 80px;
@@ -180,6 +200,9 @@ body {
       margin-right: 30px;
       object-fit: cover;
     }
+    .about-us__card__info {
+      width: 500px;
+    }
     h3 {
       font-size: 35px;
       a {
@@ -192,4 +215,51 @@ body {
   }
 }
 
+.about-us{
+  h2:hover {
+    transform: scale(1.2);
+  }
+}
+
 // Footer
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .footer__info {
+    margin-bottom: 15px;
+  }
+  a {
+    color: $accent2;
+    padding: 14px 16px;
+    text-decoration: none;
+    p {
+      display: inline;
+      color: $secondary;
+    }
+  }
+  a:hover {
+    color: $primary;
+    p {
+      color: $accent2
+    }
+  }
+}
+
+.icon {
+  width: 30px;
+  background-color: $accent1;
+  padding: 10px;
+  border-radius: 10px;
+  transition: transform .1s;
+}
+
+.icon:hover {
+  background-color: $secondary;
+  transform: scale(1.2);
+}
+
+.logo {
+  width: 50px;
+  padding: 0px;
+}
