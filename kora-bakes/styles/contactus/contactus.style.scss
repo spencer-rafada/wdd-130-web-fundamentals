@@ -16,6 +16,7 @@ body {
   margin: 0;
   margin-left: 90px;
   margin-right: 90px;
+  cursor: default;
 }
 
 .navbar {
@@ -26,8 +27,13 @@ body {
   font-size: 22px;
   margin-bottom: 90px;
   img {
-    height: 70px;
+    transition: transform .2s;
+    height: 100px;
   }
+  img:hover {
+    transform: scale(1.2);
+  }
+
   .navbar-right {
     display: flex;
     align-items: center;
@@ -38,10 +44,55 @@ body {
       color: $primary;
       font-family: 'Noto Sans', sans-serif;
       font-weight: 400;
+      transition: transform .2s;
     }
     a:hover {
       background-color: $secondary;
       color: $white;
+      transform: scale(1.1);
     }
   }
+}
+
+// Footer
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .footer__info {
+    margin-bottom: 15px;
+  }
+  a {
+    color: $accent2;
+    padding: 14px 16px;
+    text-decoration: none;
+    p {
+      display: inline;
+      color: $secondary;
+    }
+  }
+  a:hover {
+    color: $primary;
+    p {
+      color: $accent2
+    }
+  }
+}
+
+.icon {
+  width: 30px;
+  background-color: $accent1;
+  padding: 10px;
+  border-radius: 10px;
+  transition: transform .1s;
+}
+
+.icon:hover {
+  background-color: $secondary;
+  transform: scale(1.2);
+}
+
+.logo {
+  width: 50px;
+  padding: 0px;
 }
