@@ -17,6 +17,7 @@ body {
   margin-left: 90px;
   margin-right: 90px;
   cursor: default;
+  color: $dark-gray;
 }
 
 .navbar {
@@ -25,7 +26,7 @@ body {
   min-width: 100%;
   padding: 15px;
   font-size: 22px;
-  margin-bottom: 90px;
+  margin-bottom: 40px;
   img {
     transition: transform .2s;
     height: 100px;
@@ -53,6 +54,91 @@ body {
     }
   }
 }
+
+// Contact Us
+.contact-us {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 40px;
+  margin-bottom: 100px;
+}
+
+#reviews__scroll {
+  grid-column: 1/2;
+  text-align: center;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(autofill, minmax(500px, 1fr));
+  grid-auto-flow: column;
+  grid-auto-columns: minmax(500px, 1fr);
+  overflow-x: auto;
+  column-gap: 50px;
+  justify-items: center;
+  align-items: center;
+}
+
+.review {
+  width: 100%;
+  color: $white;
+  img {
+    width: 100px;
+    border-radius: 100px;
+  }
+  h3 {
+    margin: 0;
+    font-size: 40px;
+    color: $primary;
+  }
+  p {
+    margin: 0;
+    color: $dark-gray;
+    a {
+      font-weight: 900;
+      color: $secondary;
+    }
+  }
+}
+
+.contact-us__container {
+  grid-column: 2/3;
+  background-color: $accent1;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  h2 {
+    margin: 0;
+    font-size: 15px;
+    color: $dark-gray;
+  }
+
+  h1 {
+    margin-top: 0;
+    color: $white;
+    transition: transform .2s;
+    font-size: 40px;
+  }
+  h1:hover {
+    transform: scale(1.1);
+    color: $primary;
+  }
+}
+
+.contact-us__info {
+  a {
+    transition: transform 0.2s;
+    color: $primary;
+    display: block;
+    text-decoration: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+  a:hover {
+    color: $white;
+  }
+}
+
 
 // Footer
 .footer {

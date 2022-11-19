@@ -158,6 +158,28 @@ const showReviews = () => {
   });
 };
 
+const showReviewsWithImage = () => {
+  Reviews.map((review) => {
+    const element = document.getElementById("reviews__scroll");
+    const div_review = document.createElement("div");
+    div_review.className = "review";
+    const reviewer_name = document.createElement("h3");
+    reviewer_name.innerHTML = review.reviewer_name;
+    const review_text = document.createElement("p");
+    const review_text_value = document.createTextNode(
+      `"${review.review_text}"`
+    );
+    review_text.appendChild(review_text_value);
+    var img = new Image();
+    img.src = "./img/rsz_1about-us.jpg";
+
+    div_review.appendChild(img);
+    div_review.appendChild(reviewer_name);
+    div_review.appendChild(review_text);
+    element.appendChild(div_review);
+  });
+};
+
 const showTitle = () => {
   const randomIndex = Math.floor(Math.random() * Products.length);
   // console.log(randomIndex);
