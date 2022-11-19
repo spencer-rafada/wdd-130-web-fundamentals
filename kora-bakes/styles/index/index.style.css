@@ -12,7 +12,6 @@ body {
 }
 
 .navbar {
-  float: left;
   display: inline;
   min-width: 100%;
   padding: 15px;
@@ -247,4 +246,62 @@ body {
 .logo {
   width: 50px;
   padding: 0px;
+}
+
+@media only screen and (max-width: 850px) {
+  body {
+    margin: 0;
+  }
+  .grid {
+    text-align: center;
+    display: block;
+    margin-bottom: 50px;
+  }
+  .grid #hero-msg {
+    display: block;
+    height: 200px;
+    margin-bottom: 100px;
+  }
+  .grid #hero-msg .hero-msg__info {
+    display: block;
+  }
+  .grid #hero-msg .hero-msg__info p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .grid #products {
+    margin-bottom: 100px;
+  }
+  .grid .reviews {
+    margin-top: 50px;
+    margin-bottom: 30px;
+  }
+  .about-us {
+    margin-top: 0;
+    padding: 40px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .navbar .navbar-right {
+    flex-direction: column;
+  }
+  .navbar .navbar-right a {
+    padding: 0;
+  }
+  .about-us .about-us__card {
+    display: block;
+  }
+  .about-us .about-us__card .about-us__card__info {
+    width: 100%;
+    text-align: center;
+  }
+  .about-us .about-us__card .about-us__card__info h3 {
+    font-size: 30px;
+  }
+  .footer {
+    text-align: center;
+  }
+  .footer .footer__info a {
+    display: block;
+  }
 }/*# sourceMappingURL=index.style.css.map */
