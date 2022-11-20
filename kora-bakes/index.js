@@ -152,8 +152,11 @@ const showReviews = () => {
     const review_text_value = document.createTextNode(review.review_text);
     review_text.appendChild(review_text_value);
 
+    const hr = document.createElement("hr");
+
     div_review.appendChild(reviewer_name);
     div_review.appendChild(review_text);
+    div_review.appendChild(hr);
     element.appendChild(div_review);
   });
 };

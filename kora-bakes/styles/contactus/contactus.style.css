@@ -192,6 +192,9 @@ body {
   .about-us .about-us__card {
     display: block;
   }
+  .about-us .about-us__card img {
+    width: 100%;
+  }
   .about-us .about-us__card .about-us__card__info {
     width: 100%;
     text-align: center;

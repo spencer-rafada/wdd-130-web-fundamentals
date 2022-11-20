@@ -159,6 +159,9 @@ body {
       margin-top: 15px;
       margin-bottom: 15px;
       background-color: $accent1;
+      hr {
+        border-color: $accent2;
+      }
       h3 {
         color: $white;
         font-size: 25px;
@@ -310,6 +313,9 @@ body {
   .about-us {
     .about-us__card {
       display: block;
+      img {
+        width: 100%;
+      }
       .about-us__card__info {
         width: 100%;
         text-align: center;

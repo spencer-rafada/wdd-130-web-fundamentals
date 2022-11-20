@@ -152,6 +152,9 @@ body {
   margin-bottom: 15px;
   background-color: #F8C0C8;
 }
+.grid .reviews .review hr {
+  border-color: #E2C290;
+}
 .grid .reviews .review h3 {
   color: #FFFFFF;
   font-size: 25px;
@@ -290,6 +293,9 @@ body {
   }
   .about-us .about-us__card {
     display: block;
+  }
+  .about-us .about-us__card img {
+    width: 100%;
   }
   .about-us .about-us__card .about-us__card__info {
     width: 100%;
