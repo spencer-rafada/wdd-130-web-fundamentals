@@ -9,6 +9,7 @@ body {
   margin-left: 90px;
   margin-right: 90px;
   cursor: default;
+  overflow-x: hidden;
 }
 
 .navbar {
@@ -251,6 +252,181 @@ body {
   padding: 0px;
 }
 
+#petals-container {
+  width: 100%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  z-index: -20;
+  margin: 0;
+}
+
+.petal {
+  width: 1rem;
+  height: 1rem;
+  display: inline-block;
+  position: absolute;
+  top: -10rem;
+  bottom: 0;
+  z-index: 150;
+}
+
+.petal .rotate {
+  -webkit-animation: driftyRotate 1s infinite both ease-in-out;
+          animation: driftyRotate 1s infinite both ease-in-out;
+  perspective: 1000;
+}
+
+.petal .askew {
+  background: currentColor;
+  transform: skewY(10deg);
+  display: block;
+  width: 100%;
+  height: 100%;
+  -webkit-animation: drifty 1s infinite alternate both ease-in-out;
+          animation: drifty 1s infinite alternate both ease-in-out;
+  perspective: 1000;
+}
+
+.petal {
+  color: rgba(0, 0, 0, 0);
+}
+
+.petal:nth-of-type(7n) .askew {
+  -webkit-animation-delay: -0.6s;
+          animation-delay: -0.6s;
+  -webkit-animation-duration: 2.25s;
+          animation-duration: 2.25s;
+}
+
+.petal:nth-of-type(7n + 1) .askew {
+  -webkit-animation-delay: -0.879s;
+          animation-delay: -0.879s;
+  -webkit-animation-duration: 3.5s;
+          animation-duration: 3.5s;
+}
+
+.petal:nth-of-type(7n + 2) .askew {
+  -webkit-animation-delay: -0.11s;
+          animation-delay: -0.11s;
+  -webkit-animation-duration: 1.95s;
+          animation-duration: 1.95s;
+}
+
+.petal:nth-of-type(7n + 3) .askew {
+  -webkit-animation-delay: -0.246s;
+          animation-delay: -0.246s;
+  -webkit-animation-duration: 0.85s;
+          animation-duration: 0.85s;
+}
+
+.petal:nth-of-type(7n + 4) .askew {
+  -webkit-animation-delay: -0.43s;
+          animation-delay: -0.43s;
+  -webkit-animation-duration: 2.5s;
+          animation-duration: 2.5s;
+}
+
+.petal:nth-of-type(7n + 5) .askew {
+  -webkit-animation-delay: -0.56s;
+          animation-delay: -0.56s;
+  -webkit-animation-duration: 1.75s;
+          animation-duration: 1.75s;
+}
+
+.petal:nth-of-type(7n + 6) .askew {
+  -webkit-animation-delay: -0.76s;
+          animation-delay: -0.76s;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+}
+
+.petal:nth-of-type(9n) .rotate {
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+
+.petal:nth-of-type(9n + 1) .rotate {
+  -webkit-animation-duration: 2.3s;
+          animation-duration: 2.3s;
+}
+
+.petal:nth-of-type(9n + 2) .rotate {
+  -webkit-animation-duration: 1.1s;
+          animation-duration: 1.1s;
+}
+
+.petal:nth-of-type(9n + 3) .rotate {
+  -webkit-animation-duration: 0.75s;
+          animation-duration: 0.75s;
+}
+
+.petal:nth-of-type(9n + 4) .rotate {
+  -webkit-animation-duration: 4.3s;
+          animation-duration: 4.3s;
+}
+
+.petal:nth-of-type(9n + 5) .rotate {
+  -webkit-animation-duration: 3.05s;
+          animation-duration: 3.05s;
+}
+
+.petal:nth-of-type(9n + 6) .rotate {
+  -webkit-animation-duration: 2.76s;
+          animation-duration: 2.76s;
+}
+
+.petal:nth-of-type(9n + 7) .rotate {
+  -webkit-animation-duration: 7.6s;
+          animation-duration: 7.6s;
+}
+
+.petal:nth-of-type(9n + 8) .rotate {
+  -webkit-animation-duration: 1.78s;
+          animation-duration: 1.78s;
+}
+
+@-webkit-keyframes drifty {
+  0% {
+    transform: skewY(10deg) translate3d(-250%, 0, 0);
+    display: block;
+  }
+  100% {
+    transform: skewY(-12deg) translate3d(250%, 0, 0);
+    display: block;
+  }
+}
+
+@keyframes drifty {
+  0% {
+    transform: skewY(10deg) translate3d(-250%, 0, 0);
+    display: block;
+  }
+  100% {
+    transform: skewY(-12deg) translate3d(250%, 0, 0);
+    display: block;
+  }
+}
+@-webkit-keyframes driftyRotate {
+  0% {
+    transform: rotateX(0);
+    display: block;
+  }
+  100% {
+    transform: rotateX(359deg);
+    display: block;
+  }
+}
+@keyframes driftyRotate {
+  0% {
+    transform: rotateX(0);
+    display: block;
+  }
+  100% {
+    transform: rotateX(359deg);
+    display: block;
+  }
+}
 @media only screen and (max-width: 850px) {
   body {
     margin: 0;
