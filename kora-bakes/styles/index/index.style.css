@@ -92,6 +92,7 @@ body {
 }
 .grid #hero-msg .hero-msg__info a:hover {
   background-color: #F8C0C8;
+  color: #F0386B;
 }
 .grid #products {
   grid-column: 1/4;
