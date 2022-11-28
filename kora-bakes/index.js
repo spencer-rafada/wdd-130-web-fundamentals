@@ -113,6 +113,22 @@ Reviews = [
   },
 ];
 
+var Credits = new Object();
+Credits = [
+  {
+    credits_name: "Kryssma Flores",
+    feedback: "gave feedback",
+  },
+  {
+    credits_name: "Jenny Gonzales",
+    feedback: "gave feedback",
+  },
+  {
+    credits_name: "Jasmin Pioquento",
+    feedback: "designer of logo and social media icon assets",
+  },
+];
+
 const showProducts = () => {
   Products.map((product) => {
     // console.log(product);
@@ -193,6 +209,21 @@ const showTitle = () => {
   short_desc.innerHTML = Products[randomIndex].short_description;
 };
 
+const loadCredits = () => {
+  const credits_div = document.getElementById("credits");
+  Credits.map((credit) => {
+    const credits_name = document.createElement("h2");
+    credits_name.innerHTML = credit.credits_name;
+    const feedback = document.createElement("p");
+    const feedback_value = document.createTextNode(credit.feedback);
+    const hr = document.createElement("hr");
+    feedback.appendChild(feedback_value);
+    credits_div.appendChild(credits_name);
+    credits_div.appendChild(feedback);
+    credits_div.appendChild(hr);
+  });
+};
+
 var petalPlayers = [];
 
 function animatePetals() {
@@ -257,5 +288,10 @@ const showAllProducts = () => {
 // For contactus.html
 const showAllContactUs = () => {
   showReviewsWithImage();
+  animatePetals();
+};
+
+const showCredits = () => {
+  loadCredits();
   animatePetals();
 };
