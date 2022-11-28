@@ -240,6 +240,7 @@ function animatePetals() {
   }
 }
 
+// For index.html
 const showAll = () => {
   showTitle();
   showProducts();
@@ -247,11 +248,13 @@ const showAll = () => {
   animatePetals();
 };
 
+// For products.html
 const showAllProducts = () => {
   showProducts();
   animatePetals();
 };
 
+// For contactus.html
 const showAllContactUs = () => {
   showReviewsWithImage();
   animatePetals();
